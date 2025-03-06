@@ -1,0 +1,3304 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "c2acba35c36318b742f0b28ddb1e5967",
+    "packages": [
+        {
+            "name": "cocur/slugify",
+            "version": "v4.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cocur/slugify.git",
+                "reference": "1d674022e9cbefa80b4f51aa3e2375b6e3c14fdb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cocur/slugify/zipball/1d674022e9cbefa80b4f51aa3e2375b6e3c14fdb",
+                "reference": "1d674022e9cbefa80b4f51aa3e2375b6e3c14fdb",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": "~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0"
+            },
+            "conflict": {
+                "symfony/config": "<3.4 || >=4,<4.3",
+                "symfony/dependency-injection": "<3.4 || >=4,<4.3",
+                "symfony/http-kernel": "<3.4 || >=4,<4.3",
+                "twig/twig": "<2.12.1"
+            },
+            "require-dev": {
+                "laravel/framework": "^5.0|^6.0|^7.0|^8.0",
+                "latte/latte": "~2.2",
+                "league/container": "^2.2.0",
+                "mikey179/vfsstream": "~1.6.8",
+                "mockery/mockery": "^1.3",
+                "nette/di": "~2.4",
+                "pimple/pimple": "~1.1",
+                "plumphp/plum": "~0.1",
+                "symfony/config": "^3.4 || ^4.3 || ^5.0 || ^6.0",
+                "symfony/dependency-injection": "^3.4 || ^4.3 || ^5.0 || ^6.0",
+                "symfony/http-kernel": "^3.4 || ^4.3 || ^5.0 || ^6.0",
+                "symfony/phpunit-bridge": "^5.4 || ^6.0",
+                "twig/twig": "^2.12.1 || ~3.0",
+                "zendframework/zend-modulemanager": "~2.2",
+                "zendframework/zend-servicemanager": "~2.2",
+                "zendframework/zend-view": "~2.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Cocur\\Slugify\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Florian Eckerstorfer",
+                    "email": "florian@eckerstorfer.co",
+                    "homepage": "https://florian.ec"
+                },
+                {
+                    "name": "Ivo Bathke",
+                    "email": "ivo.bathke@gmail.com"
+                }
+            ],
+            "description": "Converts a string into a slug.",
+            "keywords": [
+                "slug",
+                "slugify"
+            ],
+            "support": {
+                "issues": "https://github.com/cocur/slugify/issues",
+                "source": "https://github.com/cocur/slugify/tree/v4.6.0"
+            },
+            "time": "2024-09-10T14:09:25+00:00"
+        },
+        {
+            "name": "guzzlehttp/guzzle",
+            "version": "7.9.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/guzzle.git",
+                "reference": "d281ed313b989f213357e3be1a179f02196ac99b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/d281ed313b989f213357e3be1a179f02196ac99b",
+                "reference": "d281ed313b989f213357e3be1a179f02196ac99b",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-json": "*",
+                "guzzlehttp/promises": "^1.5.3 || ^2.0.3",
+                "guzzlehttp/psr7": "^2.7.0",
+                "php": "^7.2.5 || ^8.0",
+                "psr/http-client": "^1.0",
+                "symfony/deprecation-contracts": "^2.2 || ^3.0"
+            },
+            "provide": {
+                "psr/http-client-implementation": "1.0"
+            },
+            "require-dev": {
+                "bamarni/composer-bin-plugin": "^1.8.2",
+                "ext-curl": "*",
+                "guzzle/client-integration-tests": "3.0.2",
+                "php-http/message-factory": "^1.1",
+                "phpunit/phpunit": "^8.5.39 || ^9.6.20",
+                "psr/log": "^1.1 || ^2.0 || ^3.0"
+            },
+            "suggest": {
+                "ext-curl": "Required for CURL handler support",
+                "ext-intl": "Required for Internationalized Domain Name (IDN) support",
+                "psr/log": "Required for using the Log middleware"
+            },
+            "type": "library",
+            "extra": {
+                "bamarni-bin": {
+                    "bin-links": true,
+                    "forward-command": false
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/functions_include.php"
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Graham Campbell",
+                    "email": "hello@gjcampbell.co.uk",
+                    "homepage": "https://github.com/GrahamCampbell"
+                },
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                },
+                {
+                    "name": "Jeremy Lindblom",
+                    "email": "jeremeamia@gmail.com",
+                    "homepage": "https://github.com/jeremeamia"
+                },
+                {
+                    "name": "George Mponos",
+                    "email": "gmponos@gmail.com",
+                    "homepage": "https://github.com/gmponos"
+                },
+                {
+                    "name": "Tobias Nyholm",
+                    "email": "tobias.nyholm@gmail.com",
+                    "homepage": "https://github.com/Nyholm"
+                },
+                {
+                    "name": "Márk Sági-Kazár",
+                    "email": "mark.sagikazar@gmail.com",
+                    "homepage": "https://github.com/sagikazarmark"
+                },
+                {
+                    "name": "Tobias Schultze",
+                    "email": "webmaster@tubo-world.de",
+                    "homepage": "https://github.com/Tobion"
+                }
+            ],
+            "description": "Guzzle is a PHP HTTP client library",
+            "keywords": [
+                "client",
+                "curl",
+                "framework",
+                "http",
+                "http client",
+                "psr-18",
+                "psr-7",
+                "rest",
+                "web service"
+            ],
+            "support": {
+                "issues": "https://github.com/guzzle/guzzle/issues",
+                "source": "https://github.com/guzzle/guzzle/tree/7.9.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/GrahamCampbell",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/Nyholm",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/guzzlehttp/guzzle",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-07-24T11:22:20+00:00"
+        },
+        {
+            "name": "guzzlehttp/promises",
+            "version": "2.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/promises.git",
+                "reference": "6ea8dd08867a2a42619d65c3deb2c0fcbf81c8f8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/6ea8dd08867a2a42619d65c3deb2c0fcbf81c8f8",
+                "reference": "6ea8dd08867a2a42619d65c3deb2c0fcbf81c8f8",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": "^7.2.5 || ^8.0"
+            },
+            "require-dev": {
+                "bamarni/composer-bin-plugin": "^1.8.2",
+                "phpunit/phpunit": "^8.5.39 || ^9.6.20"
+            },
+            "type": "library",
+            "extra": {
+                "bamarni-bin": {
+                    "bin-links": true,
+                    "forward-command": false
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Promise\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Graham Campbell",
+                    "email": "hello@gjcampbell.co.uk",
+                    "homepage": "https://github.com/GrahamCampbell"
+                },
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                },
+                {
+                    "name": "Tobias Nyholm",
+                    "email": "tobias.nyholm@gmail.com",
+                    "homepage": "https://github.com/Nyholm"
+                },
+                {
+                    "name": "Tobias Schultze",
+                    "email": "webmaster@tubo-world.de",
+                    "homepage": "https://github.com/Tobion"
+                }
+            ],
+            "description": "Guzzle promises library",
+            "keywords": [
+                "promise"
+            ],
+            "support": {
+                "issues": "https://github.com/guzzle/promises/issues",
+                "source": "https://github.com/guzzle/promises/tree/2.0.3"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/GrahamCampbell",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/Nyholm",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/guzzlehttp/promises",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-07-18T10:29:17+00:00"
+        },
+        {
+            "name": "guzzlehttp/psr7",
+            "version": "2.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/psr7.git",
+                "reference": "a70f5c95fb43bc83f07c9c948baa0dc1829bf201"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/a70f5c95fb43bc83f07c9c948baa0dc1829bf201",
+                "reference": "a70f5c95fb43bc83f07c9c948baa0dc1829bf201",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": "^7.2.5 || ^8.0",
+                "psr/http-factory": "^1.0",
+                "psr/http-message": "^1.1 || ^2.0",
+                "ralouphie/getallheaders": "^3.0"
+            },
+            "provide": {
+                "psr/http-factory-implementation": "1.0",
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "bamarni/composer-bin-plugin": "^1.8.2",
+                "http-interop/http-factory-tests": "0.9.0",
+                "phpunit/phpunit": "^8.5.39 || ^9.6.20"
+            },
+            "suggest": {
+                "laminas/laminas-httphandlerrunner": "Emit PSR-7 responses"
+            },
+            "type": "library",
+            "extra": {
+                "bamarni-bin": {
+                    "bin-links": true,
+                    "forward-command": false
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Psr7\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Graham Campbell",
+                    "email": "hello@gjcampbell.co.uk",
+                    "homepage": "https://github.com/GrahamCampbell"
+                },
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                },
+                {
+                    "name": "George Mponos",
+                    "email": "gmponos@gmail.com",
+                    "homepage": "https://github.com/gmponos"
+                },
+                {
+                    "name": "Tobias Nyholm",
+                    "email": "tobias.nyholm@gmail.com",
+                    "homepage": "https://github.com/Nyholm"
+                },
+                {
+                    "name": "Márk Sági-Kazár",
+                    "email": "mark.sagikazar@gmail.com",
+                    "homepage": "https://github.com/sagikazarmark"
+                },
+                {
+                    "name": "Tobias Schultze",
+                    "email": "webmaster@tubo-world.de",
+                    "homepage": "https://github.com/Tobion"
+                },
+                {
+                    "name": "Márk Sági-Kazár",
+                    "email": "mark.sagikazar@gmail.com",
+                    "homepage": "https://sagikazarmark.hu"
+                }
+            ],
+            "description": "PSR-7 message implementation that also provides common utility methods",
+            "keywords": [
+                "http",
+                "message",
+                "psr-7",
+                "request",
+                "response",
+                "stream",
+                "uri",
+                "url"
+            ],
+            "support": {
+                "issues": "https://github.com/guzzle/psr7/issues",
+                "source": "https://github.com/guzzle/psr7/tree/2.7.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/GrahamCampbell",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/Nyholm",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/guzzlehttp/psr7",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-07-18T11:15:46+00:00"
+        },
+        {
+            "name": "javiereguiluz/easyslugger",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/javiereguiluz/EasySlugger.git",
+                "reference": "11524a3fd70e3f0c98043755a0ffa228f2529211"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/javiereguiluz/EasySlugger/zipball/11524a3fd70e3f0c98043755a0ffa228f2529211",
+                "reference": "11524a3fd70e3f0c98043755a0ffa228f2529211",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "EasySlugger\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A fast and easy to use slugger with full UTF-8 support.",
+            "support": {
+                "issues": "https://github.com/javiereguiluz/EasySlugger/issues",
+                "source": "https://github.com/javiereguiluz/EasySlugger/tree/v1.0.0"
+            },
+            "time": "2015-04-12T19:57:10+00:00"
+        },
+        {
+            "name": "laminas/laminas-escaper",
+            "version": "2.15.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laminas/laminas-escaper.git",
+                "reference": "c612b0488ae486284c39885efca494c180f16351"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laminas/laminas-escaper/zipball/c612b0488ae486284c39885efca494c180f16351",
+                "reference": "c612b0488ae486284c39885efca494c180f16351",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-ctype": "*",
+                "ext-mbstring": "*",
+                "php": "~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0"
+            },
+            "conflict": {
+                "zendframework/zend-escaper": "*"
+            },
+            "require-dev": {
+                "infection/infection": "^0.27.11",
+                "laminas/laminas-coding-standard": "~3.0.1",
+                "maglnet/composer-require-checker": "^3.8.0",
+                "phpunit/phpunit": "^9.6.22",
+                "psalm/plugin-phpunit": "^0.19.0",
+                "vimeo/psalm": "^5.26.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Laminas\\Escaper\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Securely and safely escape HTML, HTML attributes, JavaScript, CSS, and URLs",
+            "homepage": "https://laminas.dev",
+            "keywords": [
+                "escaper",
+                "laminas"
+            ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-escaper/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-escaper/issues",
+                "rss": "https://github.com/laminas/laminas-escaper/releases.atom",
+                "source": "https://github.com/laminas/laminas-escaper"
+            },
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
+            "time": "2024-12-17T19:39:54+00:00"
+        },
+        {
+            "name": "markrogoyski/ipv4-subnet-calculator",
+            "version": "v3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/markrogoyski/ipv4-subnet-calculator-php.git",
+                "reference": "67ed2ef2f7faf528b0b6289074d38de09acea17a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/markrogoyski/ipv4-subnet-calculator-php/zipball/67ed2ef2f7faf528b0b6289074d38de09acea17a",
+                "reference": "67ed2ef2f7faf528b0b6289074d38de09acea17a",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "phploc/phploc": "*",
+                "phpmd/phpmd": "^2.6",
+                "phpstan/phpstan": "*",
+                "phpunit/phpunit": "6.*",
+                "satooshi/php-coveralls": "^2.0",
+                "squizlabs/php_codesniffer": "2.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "IPv4\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Rogoyski",
+                    "email": "mark@rogoyski.com",
+                    "homepage": "https://github.com/markrogoyski",
+                    "role": "Lead developer"
+                }
+            ],
+            "description": "Network calculator for subnet mask and other classless (CIDR) network information.",
+            "homepage": "https://github.com/markrogoyski/ipv4-subnet-calculator-php",
+            "keywords": [
+                "IP",
+                "address",
+                "calculator",
+                "cidr",
+                "ipv4",
+                "network",
+                "subnet"
+            ],
+            "support": {
+                "issues": "https://github.com/markrogoyski/ipv4-subnet-calculator-php/issues",
+                "source": "https://github.com/markrogoyski/ipv4-subnet-calculator-php/tree/master"
+            },
+            "time": "2018-12-19T06:44:11+00:00"
+        },
+        {
+            "name": "mbilbille/jpnforphp",
+            "version": "0.8.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mbilbille/jpnforphp.git",
+                "reference": "5e87ee9d4b0b41389002cbcbf384c42987e3fbae"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mbilbille/jpnforphp/zipball/5e87ee9d4b0b41389002cbcbf384c42987e3fbae",
+                "reference": "5e87ee9d4b0b41389002cbcbf384c42987e3fbae",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "replace": {
+                "jpnforphp/analyzer": "self.version",
+                "jpnforphp/converter": "self.version",
+                "jpnforphp/helper": "self.version",
+                "jpnforphp/inflector": "self.version",
+                "jpnforphp/transliterator": "self.version"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "7.*",
+                "symfony/yaml": ">=2.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.9-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "JpnForPhp": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matthieu Bilbille",
+                    "email": "matthieu.bilbille@gmail.com",
+                    "homepage": "https://github.com/mbilbille"
+                }
+            ],
+            "description": "A tiny PHP lib which provides nice functions & wrappers to interact with Japanese language.",
+            "homepage": "http://mbilbille.github.com/jpnforphp/",
+            "keywords": [
+                "japanese",
+                "library"
+            ],
+            "support": {
+                "issues": "https://github.com/mbilbille/jpnforphp/issues",
+                "source": "https://github.com/mbilbille/jpnforphp/tree/master"
+            },
+            "abandoned": true,
+            "time": "2019-05-23T13:33:07+00:00"
+        },
+        {
+            "name": "mlocati/ip-lib",
+            "version": "1.20.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mlocati/ip-lib.git",
+                "reference": "fd45fc3bf08ed6c7e665e2e70562082ac954afd4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mlocati/ip-lib/zipball/fd45fc3bf08ed6c7e665e2e70562082ac954afd4",
+                "reference": "fd45fc3bf08ed6c7e665e2e70562082ac954afd4",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "phpunit/phpunit": "^4.8 || ^5.7 || ^6.5 || ^7.5 || ^8.5 || ^9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "IPLib\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michele Locati",
+                    "email": "mlocati@gmail.com",
+                    "homepage": "https://github.com/mlocati",
+                    "role": "Author"
+                }
+            ],
+            "description": "Handle IPv4, IPv6 addresses and ranges",
+            "homepage": "https://github.com/mlocati/ip-lib",
+            "keywords": [
+                "IP",
+                "address",
+                "addresses",
+                "ipv4",
+                "ipv6",
+                "manage",
+                "managing",
+                "matching",
+                "network",
+                "networking",
+                "range",
+                "subnet"
+            ],
+            "support": {
+                "issues": "https://github.com/mlocati/ip-lib/issues",
+                "source": "https://github.com/mlocati/ip-lib/tree/1.20.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/mlocati",
+                    "type": "github"
+                },
+                {
+                    "url": "https://paypal.me/mlocati",
+                    "type": "other"
+                }
+            ],
+            "time": "2025-02-04T17:30:58+00:00"
+        },
+        {
+            "name": "mobiledetect/mobiledetectlib",
+            "version": "4.8.06",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/serbanghita/Mobile-Detect.git",
+                "reference": "af088b54cecc13b3264edca7da93a89ba7aa2d9e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/serbanghita/Mobile-Detect/zipball/af088b54cecc13b3264edca7da93a89ba7aa2d9e",
+                "reference": "af088b54cecc13b3264edca7da93a89ba7aa2d9e",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=8.0",
+                "psr/simple-cache": "^2 || ^3"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^v3.35.1",
+                "phpbench/phpbench": "^1.2",
+                "phpstan/phpstan": "^1.10",
+                "phpunit/phpunit": "^9.6",
+                "squizlabs/php_codesniffer": "^3.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Detection\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Serban Ghita",
+                    "email": "serbanghita@gmail.com",
+                    "homepage": "http://mobiledetect.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Mobile_Detect is a lightweight PHP class for detecting mobile devices. It uses the User-Agent string combined with specific HTTP headers to detect the mobile environment.",
+            "homepage": "https://github.com/serbanghita/Mobile-Detect",
+            "keywords": [
+                "detect mobile devices",
+                "mobile",
+                "mobile detect",
+                "mobile detector",
+                "php mobile detect"
+            ],
+            "support": {
+                "issues": "https://github.com/serbanghita/Mobile-Detect/issues",
+                "source": "https://github.com/serbanghita/Mobile-Detect/tree/4.8.06"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/serbanghita",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-03-01T22:28:42+00:00"
+        },
+        {
+            "name": "monolog/monolog",
+            "version": "3.8.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Seldaek/monolog.git",
+                "reference": "aef6ee73a77a66e404dd6540934a9ef1b3c855b4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/aef6ee73a77a66e404dd6540934a9ef1b3c855b4",
+                "reference": "aef6ee73a77a66e404dd6540934a9ef1b3c855b4",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=8.1",
+                "psr/log": "^2.0 || ^3.0"
+            },
+            "provide": {
+                "psr/log-implementation": "3.0.0"
+            },
+            "require-dev": {
+                "aws/aws-sdk-php": "^3.0",
+                "doctrine/couchdb": "~1.0@dev",
+                "elasticsearch/elasticsearch": "^7 || ^8",
+                "ext-json": "*",
+                "graylog2/gelf-php": "^1.4.2 || ^2.0",
+                "guzzlehttp/guzzle": "^7.4.5",
+                "guzzlehttp/psr7": "^2.2",
+                "mongodb/mongodb": "^1.8",
+                "php-amqplib/php-amqplib": "~2.4 || ^3",
+                "php-console/php-console": "^3.1.8",
+                "phpstan/phpstan": "^2",
+                "phpstan/phpstan-deprecation-rules": "^2",
+                "phpstan/phpstan-strict-rules": "^2",
+                "phpunit/phpunit": "^10.5.17 || ^11.0.7",
+                "predis/predis": "^1.1 || ^2",
+                "rollbar/rollbar": "^4.0",
+                "ruflin/elastica": "^7 || ^8",
+                "symfony/mailer": "^5.4 || ^6",
+                "symfony/mime": "^5.4 || ^6"
+            },
+            "suggest": {
+                "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
+                "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
+                "elasticsearch/elasticsearch": "Allow sending log messages to an Elasticsearch server via official client",
+                "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
+                "ext-curl": "Required to send log messages using the IFTTTHandler, the LogglyHandler, the SendGridHandler, the SlackWebhookHandler or the TelegramBotHandler",
+                "ext-mbstring": "Allow to work properly with unicode symbols",
+                "ext-mongodb": "Allow sending log messages to a MongoDB server (via driver)",
+                "ext-openssl": "Required to send log messages using SSL",
+                "ext-sockets": "Allow sending log messages to a Syslog server (via UDP driver)",
+                "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
+                "mongodb/mongodb": "Allow sending log messages to a MongoDB server (via library)",
+                "php-amqplib/php-amqplib": "Allow sending log messages to an AMQP server using php-amqplib",
+                "rollbar/rollbar": "Allow sending log messages to Rollbar",
+                "ruflin/elastica": "Allow sending log messages to an Elastic Search server"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Monolog\\": "src/Monolog"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "https://seld.be"
+                }
+            ],
+            "description": "Sends your logs to files, sockets, inboxes, databases and various web services",
+            "homepage": "https://github.com/Seldaek/monolog",
+            "keywords": [
+                "log",
+                "logging",
+                "psr-3"
+            ],
+            "support": {
+                "issues": "https://github.com/Seldaek/monolog/issues",
+                "source": "https://github.com/Seldaek/monolog/tree/3.8.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/Seldaek",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/monolog/monolog",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-12-05T17:15:07+00:00"
+        },
+        {
+            "name": "nguyenanhung/basic-firewall",
+            "version": "v2.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nguyenanhung/basic-firewall.git",
+                "reference": "041f3d695007e014dc5f3920a5c7272e50a6f136"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nguyenanhung/basic-firewall/zipball/041f3d695007e014dc5f3920a5c7272e50a6f136",
+                "reference": "041f3d695007e014dc5f3920a5c7272e50a6f136",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-pdo": "*",
+                "nguyenanhung/ip-helper": ">=2.0",
+                "php": ">=7.0",
+                "tramtro/m6web-firewall": ">=1.0"
+            },
+            "require-dev": {
+                "kint-php/kint": ">=3.0",
+                "monolog/monolog": ">=1.26",
+                "nguyenanhung/filesystem-helper": "^2.0",
+                "nguyenanhung/nanoid-helper": "^2.0"
+            },
+            "suggest": {
+                "ext-pdo": "For Check Database Connection",
+                "ext-pdo_mysql": "For Check Database Connection with MySQL"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "helpers/helpers.php"
+                ],
+                "psr-4": {
+                    "nguyenanhung\\PhpBasicFirewall\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Nguyen An Hung",
+                    "email": "dev@nguyenanhung.com",
+                    "homepage": "https://nguyenanhung.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP Basic Firewall",
+            "homepage": "https://github.com/nguyenanhung/basic-firewall",
+            "keywords": [
+                "firewall",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/nguyenanhung/basic-firewall/issues",
+                "source": "https://github.com/nguyenanhung/basic-firewall/tree/v2.1.2"
+            },
+            "time": "2024-11-05T16:42:23+00:00"
+        },
+        {
+            "name": "nguyenanhung/basic-miscellaneous-helper",
+            "version": "v2.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nguyenanhung/basic-miscellaneous-helper.git",
+                "reference": "21b840564995f49331bdfa17946880fa712a386c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nguyenanhung/basic-miscellaneous-helper/zipball/21b840564995f49331bdfa17946880fa712a386c",
+                "reference": "21b840564995f49331bdfa17946880fa712a386c",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "helpers/helpers.php"
+                ],
+                "psr-4": {
+                    "nguyenanhung\\Libraries\\Basic\\Miscellaneous\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nguyen An Hung",
+                    "email": "dev@nguyenanhung.com",
+                    "homepage": "https://nguyenanhung.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP Miscellaneous helper, library - Basic, Simple and Lightweight",
+            "homepage": "https://github.com/nguyenanhung/basic-miscellaneous-helper",
+            "keywords": [
+                "helper",
+                "library",
+                "misc",
+                "miscellaneous",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/nguyenanhung/basic-miscellaneous-helper/issues",
+                "source": "https://github.com/nguyenanhung/basic-miscellaneous-helper/tree/v2.0.3"
+            },
+            "time": "2024-09-21T17:52:51+00:00"
+        },
+        {
+            "name": "nguyenanhung/benchmark",
+            "version": "v2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nguyenanhung/benchmark.git",
+                "reference": "9baf5b76620d4c585d3e77fcba5e4869cbdda5d2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nguyenanhung/benchmark/zipball/9baf5b76620d4c585d3e77fcba5e4869cbdda5d2",
+                "reference": "9baf5b76620d4c585d3e77fcba5e4869cbdda5d2",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "nguyenanhung\\Bear\\Benchmark\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nguyen An Hung",
+                    "email": "dev@nguyenanhung.com",
+                    "homepage": "https://nguyenanhung.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Basic and Advanced Database Helper",
+            "homepage": "https://github.com/nguyenanhung/benchmark",
+            "keywords": [
+                "benchmark",
+                "helper",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/nguyenanhung/benchmark/issues",
+                "source": "https://github.com/nguyenanhung/benchmark/tree/v2.0.2"
+            },
+            "time": "2024-09-21T17:42:17+00:00"
+        },
+        {
+            "name": "nguyenanhung/codeigniter-basic-helper",
+            "version": "v1.6.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nguyenanhung/codeigniter-basic-helper.git",
+                "reference": "972502c1b294464b2cf4655a1a6178e1aabd2f2a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nguyenanhung/codeigniter-basic-helper/zipball/972502c1b294464b2cf4655a1a6178e1aabd2f2a",
+                "reference": "972502c1b294464b2cf4655a1a6178e1aabd2f2a",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "nguyenanhung/basic-miscellaneous-helper": "^2.0 || ^1.0",
+                "nguyenanhung/html-helper": "^2.0 || ^1.0",
+                "nguyenanhung/image-helper": "^2.0 || ^1.0",
+                "nguyenanhung/mobile-helper": "^2.0 || ^1.0",
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "nguyenanhung/codeigniter-framework": ">= 3.1",
+                "nguyenanhung/image": "^3.0 || ^2.0 || ^1.0",
+                "nguyenanhung/json-helper": "^2.0 || ^1.0",
+                "nguyenanhung/my-debug": "^4.0 || ^3.0 || ^2.0",
+                "nguyenanhung/nanoid-helper": "^2.0 || ^1.0"
+            },
+            "suggest": {
+                "ext-curl": "Need support CURL",
+                "ext-json": "Need support JSON",
+                "nguyenanhung/helpers": "Awesome Helpers - Powerful Library, Helpers and Tools",
+                "nguyenanhung/image": "Need support for Image Service",
+                "nguyenanhung/json-helper": "Need support for JSON",
+                "nguyenanhung/mobile-helper": "Need support for Mobile Support",
+                "nguyenanhung/nanoid-helper": "Need support for helper function randomNanoId()",
+                "sentry/sdk": "Need support for Logging with Sentry"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "helpers/alphaid_helper.php",
+                    "helpers/array_helper.php",
+                    "helpers/assets_helper.php",
+                    "helpers/blogspot_helper.php",
+                    "helpers/byte_helper.php",
+                    "helpers/chart_render.php",
+                    "helpers/common_helper.php",
+                    "helpers/database_helper.php",
+                    "helpers/date_helper.php",
+                    "helpers/debug_helper.php",
+                    "helpers/download_helper.php",
+                    "helpers/env_helper.php",
+                    "helpers/escape_helper.php",
+                    "helpers/facebook_helper.php",
+                    "helpers/file_helper.php",
+                    "helpers/form_helper.php",
+                    "helpers/gravatar_helper.php",
+                    "helpers/html_helper.php",
+                    "helpers/image_helper.php",
+                    "helpers/ip_helper.php",
+                    "helpers/meta_helper.php",
+                    "helpers/japan_helper.php",
+                    "helpers/money_helper.php",
+                    "helpers/nanoid_helper.php",
+                    "helpers/number_helper.php",
+                    "helpers/old_polyfill_function.php",
+                    "helpers/paging_helper.php",
+                    "helpers/placeholder_helper.php",
+                    "helpers/request_helper.php",
+                    "helpers/security_helper.php",
+                    "helpers/sentry_helper.php",
+                    "helpers/string_helper.php",
+                    "helpers/text_helper.php",
+                    "helpers/tinyurl_helper.php",
+                    "helpers/url_helper.php",
+                    "helpers/uuid_helper.php",
+                    "helpers/video_embed_helper.php",
+                    "helpers/vn_province_helper.php",
+                    "helpers/xml_helper.php"
+                ],
+                "psr-4": {
+                    "nguyenanhung\\CodeIgniter\\BasicHelper\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Nguyen An Hung",
+                    "email": "dev@nguyenanhung.com",
+                    "homepage": "https://nguyenanhung.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "CodeIgniter - Basic Helper",
+            "homepage": "https://github.com/nguyenanhung/codeigniter-basic-helper",
+            "keywords": [
+                "codeigniter",
+                "codeigniter-helper",
+                "codeigniter-library",
+                "codeigniter-startapp",
+                "codeigniter3",
+                "helper",
+                "library",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/nguyenanhung/codeigniter-basic-helper/issues",
+                "source": "https://github.com/nguyenanhung/codeigniter-basic-helper/tree/v1.6.7"
+            },
+            "time": "2024-09-21T17:08:24+00:00"
+        },
+        {
+            "name": "nguyenanhung/codeigniter-framework",
+            "version": "v3.2.0.37",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nguyenanhung/codeigniter-framework.git",
+                "reference": "4fbb55ffbd1bb42a262a5bf5e0cbd83cfbc7370c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nguyenanhung/codeigniter-framework/zipball/4fbb55ffbd1bb42a262a5bf5e0cbd83cfbc7370c",
+                "reference": "4fbb55ffbd1bb42a262a5bf5e0cbd83cfbc7370c",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-json": "*",
+                "nguyenanhung/codeigniter-basic-helper": ">=1.0",
+                "php": ">=5.6",
+                "symfony/polyfill-mbstring": ">=1.0"
+            },
+            "require-dev": {
+                "nguyenanhung/my-debug": "^4.0 || ^3.0 || ^2.0 || ^1.0"
+            },
+            "suggest": {
+                "nguyenanhung/basic-firewall": "PHP Basic Firewall - Library providing IP filtering features",
+                "nguyenanhung/database": "Need support for Powerful SQL Database Tools (Customize Laravel Database)",
+                "nguyenanhung/helpers": "Awesome Helpers - Powerful Library, Helpers and Tools",
+                "nguyenanhung/image": "Need support for Image Service",
+                "nguyenanhung/markdown": "Parser for Markdown",
+                "nguyenanhung/monitor": "Need support for Send Monitor Message to Monitor Service",
+                "nguyenanhung/my-cache": "Need support for Powerful Cache Implement",
+                "nguyenanhung/my-debug": "Need support for Powerful Logger (Extend from Monolog)",
+                "nguyenanhung/requests": "Need support for Powerful HTTP Request",
+                "nguyenanhung/security": "Awesome Helpers - Wrapper for Security, Encrypt, Encode, Purifier",
+                "nguyenanhung/seo": "Need support for SEO",
+                "nguyenanhung/validation": "Awesome Validation - A fast, extensible & stand-alone PHP input validation class that allows you to validate any data"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "helpers/common.php"
+                ],
+                "psr-4": {
+                    "nguyenanhung\\CodeIgniter\\BaseREST\\": "thirdParty/REST/"
+                },
+                "classmap": [
+                    "hungng/",
+                    "custom/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nguyen An Hung",
+                    "email": "dev@nguyenanhung.com",
+                    "homepage": "https://nguyenanhung.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "The CodeIgniter Framework - v3.2.0",
+            "homepage": "https://codeigniter.com",
+            "support": {
+                "issues": "https://github.com/nguyenanhung/codeigniter-framework/issues",
+                "source": "https://github.com/nguyenanhung/codeigniter-framework",
+                "wiki": "https://github.com/nguyenanhung/codeigniter-framework/wiki"
+            },
+            "time": "2024-11-15T16:08:03+00:00"
+        },
+        {
+            "name": "nguyenanhung/codeigniter3-skeleton",
+            "version": "v1.1.8.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nguyenanhung/codeigniter3-skeleton.git",
+                "reference": "30c7ad88b891df735a8023a8e133f20a8e77bb24"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nguyenanhung/codeigniter3-skeleton/zipball/30c7ad88b891df735a8023a8e133f20a8e77bb24",
+                "reference": "30c7ad88b891df735a8023a8e133f20a8e77bb24",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "nguyenanhung/basic-firewall": "^2.0",
+                "nguyenanhung/codeigniter-framework": "^3.2",
+                "nguyenanhung/my-debug": "^4.0 || ^3.0",
+                "nguyenanhung/requests": "^4.0 || ^3.0",
+                "php": "^7.1 || ^8.0"
+            },
+            "require-dev": {
+                "bear8421/gravatar": "^1.0",
+                "kint-php/kint": "^4",
+                "nesbot/carbon": "^2",
+                "roave/security-advisories": "dev-latest",
+                "tramtro/make-some-noise": "^1.0"
+            },
+            "suggest": {
+                "ext-curl": "Needs for support CURL",
+                "ext-json": "Needs for support JSON",
+                "ext-simplexml": "Needs for support SimpleXML",
+                "ext-xml": "Needs for support XML",
+                "ext-zend opcache": "Needs for support OpCache",
+                "nguyenanhung/basic-firewall": "PHP Basic Firewall - Library providing IP filtering features",
+                "nguyenanhung/codeigniter3-vercel-skeleton": "Deploying this package on Vercel with full compatibility",
+                "nguyenanhung/database": "Need support for Powerful SQL Database Tools (Customize Laravel Database)",
+                "nguyenanhung/helpers": "Awesome Helpers - Powerful Library, Helpers and Tools",
+                "nguyenanhung/image": "Need support for Image Service",
+                "nguyenanhung/markdown": "Parser for Markdown",
+                "nguyenanhung/monitor": "Need support for Send Monitor Message to Monitor Service",
+                "nguyenanhung/my-cache": "Need support for Powerful Cache Implement",
+                "nguyenanhung/my-debug": "Need support for Powerful Logger (Extend from Monolog)",
+                "nguyenanhung/requests": "Need support for Powerful HTTP Request",
+                "nguyenanhung/security": "Awesome Helpers - Wrapper for Security, Encrypt, Encode, Purifier",
+                "nguyenanhung/seo": "Need support for SEO",
+                "nguyenanhung/validation": "Awesome Validation - A fast, extensible & stand-alone PHP input validation class that allows you to validate any data"
+            },
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "nguyenanhung\\Support\\": "app/support/"
+                },
+                "classmap": [
+                    "app/controllers/",
+                    "app/libraries/",
+                    "app/models/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Nguyen An Hung",
+                    "email": "dev@nguyenanhung.com",
+                    "homepage": "https://nguyenanhung.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "CodeIgniter v3 Skeleton Application",
+            "homepage": "https://github.com/nguyenanhung/codeigniter3-skeleton",
+            "keywords": [
+                "Skeleton",
+                "codeigniter",
+                "codeigniter-helper",
+                "codeigniter-library",
+                "codeigniter-skeleton",
+                "codeigniter-startapp",
+                "codeigniter3",
+                "codeigniter3-skeleton",
+                "docker-php",
+                "helper",
+                "library",
+                "php",
+                "startapp",
+                "vercel-codeigniter",
+                "vercel-codeigniter-skeleton",
+                "vercel-php"
+            ],
+            "support": {
+                "issues": "https://github.com/nguyenanhung/codeigniter3-skeleton/issues",
+                "source": "https://github.com/nguyenanhung/codeigniter3-skeleton",
+                "wiki": "https://github.com/nguyenanhung/codeigniter3-skeleton/wiki"
+            },
+            "time": "2024-11-20T15:04:24+00:00"
+        },
+        {
+            "name": "nguyenanhung/escape-helper",
+            "version": "v2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nguyenanhung/escape-helper.git",
+                "reference": "aa6e1af90d7415c402667d9aef180758bcd169ad"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nguyenanhung/escape-helper/zipball/aa6e1af90d7415c402667d9aef180758bcd169ad",
+                "reference": "aa6e1af90d7415c402667d9aef180758bcd169ad",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-ctype": "*",
+                "ext-curl": "*",
+                "ext-json": "*",
+                "laminas/laminas-escaper": ">=2.6",
+                "php": ">=7.0",
+                "symfony/polyfill-mbstring": ">=1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "helpers/helpers.php"
+                ],
+                "psr-4": {
+                    "nguyenanhung\\Libraries\\Escape\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nguyen An Hung",
+                    "email": "dev@nguyenanhung.com",
+                    "homepage": "https://nguyenanhung.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Light, Simple and Small Escape Helper",
+            "homepage": "https://github.com/nguyenanhung/escape-helper",
+            "keywords": [
+                "Escape",
+                "helper",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/nguyenanhung/escape-helper/issues",
+                "source": "https://github.com/nguyenanhung/escape-helper/tree/v2.1.0"
+            },
+            "time": "2025-01-19T18:42:56+00:00"
+        },
+        {
+            "name": "nguyenanhung/filesystem-helper",
+            "version": "v2.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nguyenanhung/filesystem-helper.git",
+                "reference": "238cc002f1ddf208a58e20f9671bc29b34546380"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nguyenanhung/filesystem-helper/zipball/238cc002f1ddf208a58e20f9671bc29b34546380",
+                "reference": "238cc002f1ddf208a58e20f9671bc29b34546380",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": "^7.0 || ^8.0",
+                "symfony/filesystem": "^7.0 || ^6.0 || ^5.0 || ^4.0 || ^3.0 || ^2.0",
+                "theseer/directoryscanner": "^1.3"
+            },
+            "require-dev": {
+                "kint-php/kint": ">=3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "helpers/common_helper.php",
+                    "helpers/directory_helper.php",
+                    "helpers/path_helper.php",
+                    "helpers/file_helper.php"
+                ],
+                "psr-4": {
+                    "nguyenanhung\\Libraries\\Filesystem\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Nguyen An Hung",
+                    "email": "dev@nguyenanhung.com",
+                    "homepage": "https://nguyenanhung.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Filesystem: helpers & directory",
+            "homepage": "https://github.com/nguyenanhung/filesystem-helper",
+            "keywords": [
+                "filesystem",
+                "helper",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/nguyenanhung/filesystem-helper/issues",
+                "source": "https://github.com/nguyenanhung/filesystem-helper/tree/v2.1.2"
+            },
+            "time": "2024-12-02T05:48:56+00:00"
+        },
+        {
+            "name": "nguyenanhung/html-helper",
+            "version": "v2.1.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nguyenanhung/html-helper.git",
+                "reference": "fc8b03c17ea76bb42d2667c60d0dc20da489cc1f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nguyenanhung/html-helper/zipball/fc8b03c17ea76bb42d2667c60d0dc20da489cc1f",
+                "reference": "fc8b03c17ea76bb42d2667c60d0dc20da489cc1f",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "nguyenanhung/pagination": "^2.0 || ^1.0",
+                "nguyenanhung/text-helper": "^2.0 || ^1.0",
+                "php": ">=7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "helpers/helpers.php"
+                ],
+                "psr-4": {
+                    "nguyenanhung\\Libraries\\HTML\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nguyen An Hung",
+                    "email": "dev@nguyenanhung.com",
+                    "homepage": "https://nguyenanhung.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Light, Simple and Small HTML Helper",
+            "homepage": "https://github.com/nguyenanhung/html-helper",
+            "keywords": [
+                "helper",
+                "html",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/nguyenanhung/html-helper/issues",
+                "source": "https://github.com/nguyenanhung/html-helper/tree/v2.1.6"
+            },
+            "time": "2025-01-19T14:25:34+00:00"
+        },
+        {
+            "name": "nguyenanhung/image-helper",
+            "version": "v2.0.16",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nguyenanhung/image-helper.git",
+                "reference": "8971a3b83dd604ee2fcc354849d61a79a04a8b13"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nguyenanhung/image-helper/zipball/8971a3b83dd604ee2fcc354849d61a79a04a8b13",
+                "reference": "8971a3b83dd604ee2fcc354849d61a79a04a8b13",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=7.0",
+                "smart-bear-cms/external-cdn-url-optimize": ">=1.0"
+            },
+            "require-dev": {
+                "nguyenanhung/image": ">=1.0"
+            },
+            "suggest": {
+                "ext-curl": "Needed to support cURL",
+                "ext-iconv": "Needed to support iconv",
+                "ext-json": "Needed to support JSON",
+                "ext-mcrypt": "Needed to support mcrypt",
+                "ext-openssl": "Needed to support openssl",
+                "nguyenanhung/image": "For full Image Processing"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "helpers/helpers.php"
+                ],
+                "psr-4": {
+                    "nguyenanhung\\Libraries\\ImageHelper\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nguyen An Hung",
+                    "email": "dev@nguyenanhung.com",
+                    "homepage": "https://nguyenanhung.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Image helper, library - Basic, Simple and Lightweight",
+            "homepage": "https://github.com/nguyenanhung/image-helper",
+            "keywords": [
+                "helper",
+                "image",
+                "library",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/nguyenanhung/image-helper/issues",
+                "source": "https://github.com/nguyenanhung/image-helper/tree/v2.0.16"
+            },
+            "time": "2024-11-11T03:46:47+00:00"
+        },
+        {
+            "name": "nguyenanhung/ip-helper",
+            "version": "v2.0.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nguyenanhung/ip-helper.git",
+                "reference": "41331a3d2bf97700c8e2a2f95764e934a149df39"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nguyenanhung/ip-helper/zipball/41331a3d2bf97700c8e2a2f95764e934a149df39",
+                "reference": "41331a3d2bf97700c8e2a2f95764e934a149df39",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "markrogoyski/ipv4-subnet-calculator": "^3.1",
+                "mlocati/ip-lib": "^1.17",
+                "php": ">=7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "helpers/helpers.php"
+                ],
+                "psr-4": {
+                    "nguyenanhung\\Libraries\\IP\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nguyen An Hung",
+                    "email": "dev@nguyenanhung.com",
+                    "homepage": "https://nguyenanhung.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Light, Simple and Small IP Helper",
+            "homepage": "https://github.com/nguyenanhung/ip-helper",
+            "keywords": [
+                "IP",
+                "helper",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/nguyenanhung/ip-helper/issues",
+                "source": "https://github.com/nguyenanhung/ip-helper/tree/v2.0.7"
+            },
+            "time": "2024-09-21T18:44:15+00:00"
+        },
+        {
+            "name": "nguyenanhung/mobile-helper",
+            "version": "v2.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nguyenanhung/mobile-helper.git",
+                "reference": "bcc3f59e3cf08b42426cd8d022e45b0be5d53f5f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nguyenanhung/mobile-helper/zipball/bcc3f59e3cf08b42426cd8d022e45b0be5d53f5f",
+                "reference": "bcc3f59e3cf08b42426cd8d022e45b0be5d53f5f",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-json": "*",
+                "mobiledetect/mobiledetectlib": ">=2.8",
+                "php": ">=7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "helpers/helpers.php",
+                    "helpers/mobile_detect.php"
+                ],
+                "psr-4": {
+                    "nguyenanhung\\Libraries\\Mobile\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Nguyen An Hung",
+                    "email": "dev@nguyenanhung.com",
+                    "homepage": "https://nguyenanhung.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Basic Helper for Mobile Device with PHP",
+            "homepage": "https://github.com/nguyenanhung/mobile-helper",
+            "keywords": [
+                "helper",
+                "mobile",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/nguyenanhung/mobile-helper/issues",
+                "source": "https://github.com/nguyenanhung/mobile-helper/tree/v2.0.4"
+            },
+            "time": "2024-09-21T19:18:08+00:00"
+        },
+        {
+            "name": "nguyenanhung/my-debug",
+            "version": "v4.0.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nguyenanhung/my-debug.git",
+                "reference": "c1d8e31f532c4d713a371b80d925515ada65aca0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nguyenanhung/my-debug/zipball/c1d8e31f532c4d713a371b80d925515ada65aca0",
+                "reference": "c1d8e31f532c4d713a371b80d925515ada65aca0",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "monolog/monolog": "^3.0",
+                "nguyenanhung/benchmark": "^2.0 || ^1.0",
+                "nguyenanhung/filesystem-helper": "^2.0 || ^1.0",
+                "nguyenanhung/slug-helper": "^3.0 || ^2.0 || ^1.0",
+                "php": ">=8.1"
+            },
+            "require-dev": {
+                "kint-php/kint": ">=3.0"
+            },
+            "suggest": {
+                "ext-iconv": "Needed to support ICONV",
+                "ext-json": "Needed to support JSON",
+                "ext-mbstring": "Needed to support MbString",
+                "ext-openssl": "Needed to support OpenSSL",
+                "sentry/sdk": "Need support for Logging with Sentry"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "nguyenanhung\\MyDebug\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Nguyen An Hung",
+                    "email": "dev@nguyenanhung.com",
+                    "homepage": "https://nguyenanhung.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "My Debug, Logger Library",
+            "homepage": "https://github.com/nguyenanhung/my-debug",
+            "keywords": [
+                "debug",
+                "log",
+                "logger"
+            ],
+            "support": {
+                "issues": "https://github.com/nguyenanhung/my-debug/issues",
+                "source": "https://github.com/nguyenanhung/my-debug/tree/v4.0.8"
+            },
+            "time": "2024-09-21T19:06:45+00:00"
+        },
+        {
+            "name": "nguyenanhung/nusoap",
+            "version": "v0.9.15.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nguyenanhung/nusoap.git",
+                "reference": "1724b318004bf762a6b26b79b231d3d6f50c12b3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nguyenanhung/nusoap/zipball/1724b318004bf762a6b26b79b231d3d6f50c12b3",
+                "reference": "1724b318004bf762a6b26b79b231d3d6f50c12b3",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "helpers/functions.php"
+                ],
+                "psr-4": {
+                    "nguyenanhung\\MyNuSOAP\\": "src/",
+                    "nguyenanhung\\MyFixNuSOAP\\": "fixed/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1-only"
+            ],
+            "authors": [
+                {
+                    "name": "Dietrich Ayala",
+                    "homepage": "https://sourceforge.net/u/dietricha/profile/"
+                },
+                {
+                    "name": "Scott Nichol",
+                    "homepage": "https://sourceforge.net/u/snichol/profile/"
+                },
+                {
+                    "name": "Nguyen An Hung",
+                    "email": "dev@nguyenanhung.com",
+                    "homepage": "https://nguyenanhung.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "My nuSOAP Library, fix code for for PHP 8.2 <=> 5.4",
+            "homepage": "https://github.com/nguyenanhung/nusoap",
+            "keywords": [
+                "nusoap",
+                "soap"
+            ],
+            "support": {
+                "issues": "https://github.com/nguyenanhung/nusoap/issues",
+                "source": "https://github.com/nguyenanhung/nusoap/tree/v0.9.15.3"
+            },
+            "time": "2023-08-09T15:44:44+00:00"
+        },
+        {
+            "name": "nguyenanhung/pagination",
+            "version": "v2.0.9.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nguyenanhung/pagination.git",
+                "reference": "f905865200ea0000916a4b62125cfe15dc2a4012"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nguyenanhung/pagination/zipball/f905865200ea0000916a4b62125cfe15dc2a4012",
+                "reference": "f905865200ea0000916a4b62125cfe15dc2a4012",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "nguyenanhung/escape-helper": "^2.0 || ^1.0",
+                "php": ">=7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "helpers/helpers.php"
+                ],
+                "psr-4": {
+                    "nguyenanhung\\Libraries\\Pagination\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nguyen An Hung",
+                    "email": "dev@nguyenanhung.com",
+                    "homepage": "https://nguyenanhung.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Pagination Helper, Library - Basic, Simple and Lightweight",
+            "homepage": "https://github.com/nguyenanhung/pagination",
+            "keywords": [
+                "helper",
+                "library",
+                "pagination",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/nguyenanhung/pagination/issues",
+                "source": "https://github.com/nguyenanhung/pagination/tree/v2.0.9.1"
+            },
+            "time": "2023-09-27T07:12:30+00:00"
+        },
+        {
+            "name": "nguyenanhung/requests",
+            "version": "v4.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nguyenanhung/requests.git",
+                "reference": "a79bf00c16e009ffa23afeff0f053ec0cc8f2124"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nguyenanhung/requests/zipball/a79bf00c16e009ffa23afeff0f053ec0cc8f2124",
+                "reference": "a79bf00c16e009ffa23afeff0f053ec0cc8f2124",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-iconv": "*",
+                "ext-json": "*",
+                "guzzlehttp/guzzle": "^7 || ^6",
+                "nguyenanhung/ip-helper": "^2.0 || ^1.0",
+                "nguyenanhung/my-debug": "^4.0 || ^3.0 || ^2.0",
+                "nguyenanhung/nusoap": "^0.9",
+                "php": "^8.0 || ^7.0",
+                "php-curl-class/php-curl-class": "^9 || ^8",
+                "symfony/http-foundation": "^7.0 || ^6.0 || ^5.4 || ^4.4 || ^3.4",
+                "symfony/polyfill-mbstring": ">= 1.0"
+            },
+            "require-dev": {
+                "kint-php/kint": "^5 || ^4 || ^3 || ^2 || ^1"
+            },
+            "suggest": {
+                "ext-curl": "Needed to support cURL",
+                "ext-iconv": "Needed to support iconv",
+                "ext-json": "Needed to support JSON",
+                "ext-mbstring": "Needed to support mb_string",
+                "ext-openssl": "Needed to support SSL"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "helpers/helpers.php"
+                ],
+                "psr-4": {
+                    "nguyenanhung\\MyRequests\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Nguyen An Hung",
+                    "email": "dev@nguyenanhung.com",
+                    "homepage": "https://nguyenanhung.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "My Requests Library",
+            "homepage": "https://github.com/nguyenanhung/requests",
+            "keywords": [
+                "curl",
+                "get_content",
+                "http",
+                "request",
+                "rest",
+                "soap"
+            ],
+            "support": {
+                "issues": "https://github.com/nguyenanhung/requests/issues",
+                "source": "https://github.com/nguyenanhung/requests/tree/v4.0.2"
+            },
+            "time": "2024-09-21T19:41:14+00:00"
+        },
+        {
+            "name": "nguyenanhung/slug-helper",
+            "version": "v3.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nguyenanhung/slug-helper.git",
+                "reference": "518ad6067664ad2c718a067f3b9a8bb778794da8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nguyenanhung/slug-helper/zipball/518ad6067664ad2c718a067f3b9a8bb778794da8",
+                "reference": "518ad6067664ad2c718a067f3b9a8bb778794da8",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "cocur/slugify": "^4.0 || ^3.0 || ^2.0 || ^1.0",
+                "ext-intl": "*",
+                "ext-mbstring": "*",
+                "javiereguiluz/easyslugger": "^1.0",
+                "mbilbille/jpnforphp": "^0.8.1",
+                "php": ">=8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "helpers/helpers.php"
+                ],
+                "psr-4": {
+                    "nguyenanhung\\Libraries\\Slug\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nguyen An Hung",
+                    "email": "dev@nguyenanhung.com",
+                    "homepage": "https://nguyenanhung.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Slug Helper - Basic, Clean and Lightweight",
+            "homepage": "https://github.com/nguyenanhung/slug-helper",
+            "keywords": [
+                "helper",
+                "library",
+                "php",
+                "slu"
+            ],
+            "support": {
+                "issues": "https://github.com/nguyenanhung/slug-helper/issues",
+                "source": "https://github.com/nguyenanhung/slug-helper",
+                "wiki": "https://github.com/nguyenanhung/slug-helper/wiki"
+            },
+            "time": "2024-09-21T19:26:59+00:00"
+        },
+        {
+            "name": "nguyenanhung/text-helper",
+            "version": "v2.0.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nguyenanhung/text-helper.git",
+                "reference": "1940c0de8546d35f6a8e687e8822578c5f510cfd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nguyenanhung/text-helper/zipball/1940c0de8546d35f6a8e687e8822578c5f510cfd",
+                "reference": "1940c0de8546d35f6a8e687e8822578c5f510cfd",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "helpers/ci_text_helper.php"
+                ],
+                "psr-4": {
+                    "nguyenanhung\\Libraries\\Text\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nguyen An Hung",
+                    "email": "dev@nguyenanhung.com",
+                    "homepage": "https://nguyenanhung.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Text Helper, basic, simple and light",
+            "homepage": "https://github.com/nguyenanhung/text-helper",
+            "keywords": [
+                "helper",
+                "php",
+                "text"
+            ],
+            "support": {
+                "issues": "https://github.com/nguyenanhung/text-helper/issues",
+                "source": "https://github.com/nguyenanhung/text-helper/tree/v2.0.9"
+            },
+            "time": "2024-09-21T20:04:36+00:00"
+        },
+        {
+            "name": "php-curl-class/php-curl-class",
+            "version": "9.19.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-curl-class/php-curl-class.git",
+                "reference": "c41efeb4ea2dc3cf8f90f8f967b0fcf45a41e294"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-curl-class/php-curl-class/zipball/c41efeb4ea2dc3cf8f90f8f967b0fcf45a41e294",
+                "reference": "c41efeb4ea2dc3cf8f90f8f967b0fcf45a41e294",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "*",
+                "ext-gd": "*",
+                "friendsofphp/php-cs-fixer": "*",
+                "phpcompatibility/php-compatibility": "dev-develop",
+                "phpcsstandards/phpcsutils": "@alpha",
+                "phpunit/phpunit": "*",
+                "squizlabs/php_codesniffer": "*",
+                "vimeo/psalm": ">=0.3.63"
+            },
+            "suggest": {
+                "ext-mbstring": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Curl\\": "src/Curl/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Unlicense"
+            ],
+            "authors": [
+                {
+                    "name": "Zach Borboa"
+                },
+                {
+                    "name": "Contributors",
+                    "homepage": "https://github.com/php-curl-class/php-curl-class/graphs/contributors"
+                }
+            ],
+            "description": "PHP Curl Class makes it easy to send HTTP requests and integrate with web APIs.",
+            "homepage": "https://github.com/php-curl-class/php-curl-class",
+            "keywords": [
+                "API-Client",
+                "api",
+                "class",
+                "client",
+                "curl",
+                "framework",
+                "http",
+                "http-client",
+                "http-proxy",
+                "json",
+                "php",
+                "php-curl",
+                "php-curl-library",
+                "proxy",
+                "requests",
+                "restful",
+                "web-scraper",
+                "web-scraping ",
+                "web-service",
+                "xml"
+            ],
+            "support": {
+                "issues": "https://github.com/php-curl-class/php-curl-class/issues",
+                "source": "https://github.com/php-curl-class/php-curl-class/tree/9.19.2"
+            },
+            "time": "2024-04-09T18:03:13+00:00"
+        },
+        {
+            "name": "psr/http-client",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-client.git",
+                "reference": "bb5906edc1c324c9a05aa0873d40117941e5fa90"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-client/zipball/bb5906edc1c324c9a05aa0873d40117941e5fa90",
+                "reference": "bb5906edc1c324c9a05aa0873d40117941e5fa90",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": "^7.0 || ^8.0",
+                "psr/http-message": "^1.0 || ^2.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Client\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP clients",
+            "homepage": "https://github.com/php-fig/http-client",
+            "keywords": [
+                "http",
+                "http-client",
+                "psr",
+                "psr-18"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/http-client"
+            },
+            "time": "2023-09-23T14:17:50+00:00"
+        },
+        {
+            "name": "psr/http-factory",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-factory.git",
+                "reference": "e616d01114759c4c489f93b099585439f795fe35"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-factory/zipball/e616d01114759c4c489f93b099585439f795fe35",
+                "reference": "e616d01114759c4c489f93b099585439f795fe35",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=7.0.0",
+                "psr/http-message": "^1.0 || ^2.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interfaces for PSR-7 HTTP message factories",
+            "keywords": [
+                "factory",
+                "http",
+                "message",
+                "psr",
+                "psr-17",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/http-factory/tree/1.0.2"
+            },
+            "time": "2023-04-10T20:10:41+00:00"
+        },
+        {
+            "name": "psr/http-message",
+            "version": "2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "402d35bcb92c70c026d1a6a9883f06b2ead23d71"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/402d35bcb92c70c026d1a6a9883f06b2ead23d71",
+                "reference": "402d35bcb92c70c026d1a6a9883f06b2ead23d71",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": "^7.2 || ^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "homepage": "https://github.com/php-fig/http-message",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/http-message/tree/2.0"
+            },
+            "time": "2023-04-04T09:54:51+00:00"
+        },
+        {
+            "name": "psr/log",
+            "version": "3.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "79dff0b268932c640297f5208d6298f71855c03e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/79dff0b268932c640297f5208d6298f71855c03e",
+                "reference": "79dff0b268932c640297f5208d6298f71855c03e",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=8.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Log\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/log/tree/3.0.1"
+            },
+            "time": "2024-08-21T13:31:24+00:00"
+        },
+        {
+            "name": "psr/simple-cache",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/simple-cache.git",
+                "reference": "764e0b3939f5ca87cb904f570ef9be2d78a07865"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/simple-cache/zipball/764e0b3939f5ca87cb904f570ef9be2d78a07865",
+                "reference": "764e0b3939f5ca87cb904f570ef9be2d78a07865",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=8.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\SimpleCache\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interfaces for simple caching",
+            "keywords": [
+                "cache",
+                "caching",
+                "psr",
+                "psr-16",
+                "simple-cache"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/simple-cache/tree/3.0.0"
+            },
+            "time": "2021-10-29T13:26:27+00:00"
+        },
+        {
+            "name": "ralouphie/getallheaders",
+            "version": "3.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ralouphie/getallheaders.git",
+                "reference": "120b605dfeb996808c31b6477290a714d356e822"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ralouphie/getallheaders/zipball/120b605dfeb996808c31b6477290a714d356e822",
+                "reference": "120b605dfeb996808c31b6477290a714d356e822",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "^2.1",
+                "phpunit/phpunit": "^5 || ^6.5"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/getallheaders.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ralph Khattar",
+                    "email": "ralph.khattar@gmail.com"
+                }
+            ],
+            "description": "A polyfill for getallheaders.",
+            "support": {
+                "issues": "https://github.com/ralouphie/getallheaders/issues",
+                "source": "https://github.com/ralouphie/getallheaders/tree/develop"
+            },
+            "time": "2019-03-08T08:55:37+00:00"
+        },
+        {
+            "name": "smart-bear-cms/external-cdn-url-optimize",
+            "version": "v1.0.1.49",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/smart-bear-cms/external-cdn-url-optimize.git",
+                "reference": "b8a7553ebaa6d3e3e93d84cc160570494f055fb2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/smart-bear-cms/external-cdn-url-optimize/zipball/b8a7553ebaa6d3e3e93d84cc160570494f055fb2",
+                "reference": "b8a7553ebaa6d3e3e93d84cc160570494f055fb2",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=5.6"
+            },
+            "suggest": {
+                "ext-curl": "Needed to support cURL",
+                "ext-iconv": "Needed to support iconv",
+                "ext-json": "Needed to support JSON",
+                "ext-mcrypt": "Needed to support mcrypt",
+                "ext-openssl": "Needed to support openssl"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "helpers/helpers.php",
+                    "helpers/optimize.php",
+                    "helpers/original.php",
+                    "helpers/onecms.php",
+                    "helpers/drupalcms.php"
+                ],
+                "psr-4": {
+                    "nguyenanhung\\Platforms\\SmartBearCMS\\Library\\ExternalCDNOptimize\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nguyen An Hung",
+                    "email": "dev@nguyenanhung.com",
+                    "homepage": "https://nguyenanhung.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "External CDN Optimize - Basic, Simple and Lightweight",
+            "homepage": "https://github.com/smart-bear-cms/external-cdn-url-optimize",
+            "keywords": [
+                "helper",
+                "image",
+                "library",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/smart-bear-cms/external-cdn-url-optimize/issues",
+                "source": "https://github.com/smart-bear-cms/external-cdn-url-optimize/tree/v1.0.1.49"
+            },
+            "time": "2023-11-18T18:57:13+00:00"
+        },
+        {
+            "name": "symfony/deprecation-contracts",
+            "version": "v3.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/deprecation-contracts.git",
+                "reference": "74c71c939a79f7d5bf3c1ce9f5ea37ba0114c6f6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/74c71c939a79f7d5bf3c1ce9f5ea37ba0114c6f6",
+                "reference": "74c71c939a79f7d5bf3c1ce9f5ea37ba0114c6f6",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=8.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "3.5-dev"
+                },
+                "thanks": {
+                    "name": "symfony/contracts",
+                    "url": "https://github.com/symfony/contracts"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "function.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "A generic function and convention to trigger deprecation notices",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/deprecation-contracts/tree/v3.5.1"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-09-25T14:20:29+00:00"
+        },
+        {
+            "name": "symfony/filesystem",
+            "version": "v7.1.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/filesystem.git",
+                "reference": "c835867b3c62bb05c7fe3d637c871c7ae52024d4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/c835867b3c62bb05c7fe3d637c871c7ae52024d4",
+                "reference": "c835867b3c62bb05c7fe3d637c871c7ae52024d4",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=8.2",
+                "symfony/polyfill-ctype": "~1.8",
+                "symfony/polyfill-mbstring": "~1.8"
+            },
+            "require-dev": {
+                "symfony/process": "^6.4|^7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Filesystem\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides basic utilities for the filesystem",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/filesystem/tree/v7.1.6"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-10-25T15:11:02+00:00"
+        },
+        {
+            "name": "symfony/http-foundation",
+            "version": "v7.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/http-foundation.git",
+                "reference": "62d1a43796ca3fea3f83a8470dfe63a4af3bc588"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/62d1a43796ca3fea3f83a8470dfe63a4af3bc588",
+                "reference": "62d1a43796ca3fea3f83a8470dfe63a4af3bc588",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=8.2",
+                "symfony/deprecation-contracts": "^2.5|^3.0",
+                "symfony/polyfill-mbstring": "~1.1",
+                "symfony/polyfill-php83": "^1.27"
+            },
+            "conflict": {
+                "doctrine/dbal": "<3.6",
+                "symfony/cache": "<6.4.12|>=7.0,<7.1.5"
+            },
+            "require-dev": {
+                "doctrine/dbal": "^3.6|^4",
+                "predis/predis": "^1.1|^2.0",
+                "symfony/cache": "^6.4.12|^7.1.5",
+                "symfony/dependency-injection": "^6.4|^7.0",
+                "symfony/expression-language": "^6.4|^7.0",
+                "symfony/http-kernel": "^6.4|^7.0",
+                "symfony/mime": "^6.4|^7.0",
+                "symfony/rate-limiter": "^6.4|^7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\HttpFoundation\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Defines an object-oriented layer for the HTTP specification",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/http-foundation/tree/v7.2.2"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-12-30T19:00:17+00:00"
+        },
+        {
+            "name": "symfony/polyfill-ctype",
+            "version": "v1.31.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-ctype.git",
+                "reference": "a3cc8b044a6ea513310cbd48ef7333b384945638"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/a3cc8b044a6ea513310cbd48ef7333b384945638",
+                "reference": "a3cc8b044a6ea513310cbd48ef7333b384945638",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=7.2"
+            },
+            "provide": {
+                "ext-ctype": "*"
+            },
+            "suggest": {
+                "ext-ctype": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "thanks": {
+                    "url": "https://github.com/symfony/polyfill",
+                    "name": "symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Ctype\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Gert de Pagter",
+                    "email": "BackEndTea@gmail.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for ctype functions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "ctype",
+                "polyfill",
+                "portable"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.31.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-09-09T11:45:10+00:00"
+        },
+        {
+            "name": "symfony/polyfill-mbstring",
+            "version": "v1.31.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-mbstring.git",
+                "reference": "85181ba99b2345b0ef10ce42ecac37612d9fd341"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/85181ba99b2345b0ef10ce42ecac37612d9fd341",
+                "reference": "85181ba99b2345b0ef10ce42ecac37612d9fd341",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=7.2"
+            },
+            "provide": {
+                "ext-mbstring": "*"
+            },
+            "suggest": {
+                "ext-mbstring": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Mbstring\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for the Mbstring extension",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "mbstring",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.31.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-09-09T11:45:10+00:00"
+        },
+        {
+            "name": "symfony/polyfill-php83",
+            "version": "v1.31.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-php83.git",
+                "reference": "2fb86d65e2d424369ad2905e83b236a8805ba491"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-php83/zipball/2fb86d65e2d424369ad2905e83b236a8805ba491",
+                "reference": "2fb86d65e2d424369ad2905e83b236a8805ba491",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=7.2"
+            },
+            "type": "library",
+            "extra": {
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php83\\": ""
+                },
+                "classmap": [
+                    "Resources/stubs"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill backporting some PHP 8.3+ features to lower PHP versions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-php83/tree/v1.31.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-09-09T11:45:10+00:00"
+        },
+        {
+            "name": "theseer/directoryscanner",
+            "version": "1.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/theseer/DirectoryScanner.git",
+                "reference": "4cdce31c1b5120779a01225b5b0968f9321342d6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/theseer/DirectoryScanner/zipball/4cdce31c1b5120779a01225b5b0968f9321342d6",
+                "reference": "4cdce31c1b5120779a01225b5b0968f9321342d6",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=5.3.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Arne Blankerts",
+                    "email": "arne@blankerts.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A recursive directory scanner and filter",
+            "support": {
+                "issues": "https://github.com/theseer/DirectoryScanner/issues",
+                "source": "https://github.com/theseer/DirectoryScanner/tree/1.3.3"
+            },
+            "time": "2021-07-24T18:41:34+00:00"
+        },
+        {
+            "name": "tramtro/m6web-firewall",
+            "version": "v1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tramtro/m6WebFirewall.git",
+                "reference": "29e2f4e861d51b3d568ee9b059117212011e774b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tramtro/m6WebFirewall/zipball/29e2f4e861d51b3d568ee9b059117212011e774b",
+                "reference": "29e2f4e861d51b3d568ee9b059117212011e774b",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-bcmath": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "atoum/atoum": "^2.8|^3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "nguyenanhung\\Component\\Firewall\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "M6Web",
+                    "email": "opensource@m6web.fr",
+                    "homepage": "https://tech.m6web.fr/"
+                },
+                {
+                    "name": "Nguyen An Hung",
+                    "email": "dev@nguyenanhung.com",
+                    "homepage": "https://nguyenanhung.com/"
+                }
+            ],
+            "description": "Library providing IP filtering features",
+            "keywords": [
+                "IP",
+                "filtering",
+                "firewall"
+            ],
+            "support": {
+                "source": "https://github.com/tramtro/m6WebFirewall/tree/v1.0.4"
+            },
+            "time": "2022-06-21T03:12:47+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.6.0"
+}
