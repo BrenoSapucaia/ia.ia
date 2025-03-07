@@ -126,45 +126,46 @@ Copiar
     Seu navegador não suporta o elemento de áudio.
 </audio>
 
+<audio id="audioPlayer" src="seuarquivo.mp3"></audio>
+
 <script>
-    const audio = document.getElementById("audioPlayer");
+    document.addEventListener("DOMContentLoaded", function () {
+        const audio = document.getElementById("audioPlayer");
 
-    // Função para alternar entre play e pause
-    function toggleAudio() {
-        if (audio.paused) {
-            audio.play();
-        } else {
-            audio.pause();
+        function toggleAudio() {
+            if (audio.paused) {
+                audio.play().catch(error => console.error("Erro ao reproduzir áudio:", error));
+            } else {
+                audio.pause();
+            }
         }
-    }
 
-    // Evento para a tecla "P" (opcional)
-    document.addEventListener("keydown", function(event) {
-        if (event.code === "KeyP") {
-            event.preventDefault();
-            toggleAudio();
-        }
-    });
+        // Tecla "P" para alternar áudio
+        document.addEventListener("keydown", function (event) {
+            if (event.code === "KeyP") {
+                event.preventDefault();
+                toggleAudio();
+            }
+        });
 
-    // Evento de clique na tela, exceto em caixas de texto
-    document.addEventListener("click", function(event) {
-        const target = event.target;
-        // Verifica se o elemento clicado é um input ou textarea
-        if (target.tagName !== "INPUT" && target.tagName !== "TEXTAREA") {
-            toggleAudio();
-        }
-    });
+        // Clique na tela (exceto em inputs e textareas)
+        document.addEventListener("click", function (event) {
+            const target = event.target;
+            if (target.tagName !== "INPUT" && target.tagName !== "TEXTAREA") {
+                toggleAudio();
+            }
+        });
 
-    // Evento de toque na tela, exceto em caixas de texto (para celulares)
-    document.addEventListener("touchstart", function(event) {
-        const target = event.target;
-        // Verifica se o elemento tocado é um input ou textarea
-        if (target.tagName !== "INPUT" && target.tagName !== "TEXTAREA") {
-            event.preventDefault(); // Evita comportamentos indesejados no toque
-            toggleAudio();
-        }
+        // Toque na tela (exceto em inputs e textareas) - Melhor compatibilidade com celulares
+        document.addEventListener("touchend", function (event) {
+            const target = event.target;
+            if (target.tagName !== "INPUT" && target.tagName !== "TEXTAREA") {
+                toggleAudio();
+            }
+        });
     });
 </script>
+
 <div class="flex space-x-4 fixed bottom-4 left-4 z-50">
     <!-- Botão WhatsApp -->
     <a href="https://wa.me/5511987647751" target="_blank" 
